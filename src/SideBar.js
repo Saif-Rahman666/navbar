@@ -8,9 +8,9 @@ function SideBar() {
                     flex flex-col
                     bg-green-950 text-white shadow-lg'>
 
-            <SideBarIcon icon={<FaFire size='25'/>}/>  
-            <SideBarIcon icon={<BsPlus size={25}/>}/>    
-            <SideBarIcon icon={<BsFillLightningFill size = "20" />} />
+            <SideBarIcon icon={<FaFire size='28'/>}/>  
+            <SideBarIcon icon={<BsPlus size="32"/>}/>    
+            <SideBarIcon icon={<BsFillLightningFill size = "25" />} />
             <SideBarIcon icon={<FaPoo size = "25"/>}/>
             <SideBarIcon icon= {<BsGearFill size={25}/>} />
         
@@ -18,10 +18,16 @@ function SideBar() {
   )
 }
 
-const SideBarIcon = ({icon}) => (
-    <div>
+const SideBarIcon = ({icon, text = 'tooltip 💡'}) => (
+    <div className='sidebar-icon group'>
         {icon}
+
+        <span className='sidebar-tooltip group-hover:scale-90'>
+            {text}
+        </span>
     </div>
+
+   
 )
    
 
