@@ -6,7 +6,8 @@ function SideBar() {
   return (
     <div className='fixed top-0 left-0 h-screen w-16 m-0
                     flex flex-col
-                    bg-green-950 text-white shadow-lg'>
+                    bg-green-950 text-white shadow-lg
+                    dark:bg-green-950 dark:text-white'>
 
             <SideBarIcon icon={<FaFire size='28'/>}/>  
             <SideBarIcon icon={<BsPlus size="32"/>}/>    
